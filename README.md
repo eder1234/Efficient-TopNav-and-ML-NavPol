@@ -35,8 +35,8 @@ The system follows the methodology presented in the following paper:
 1. Install Python 3.8 or later.
 2. Install [Habitat Lab](https://github.com/facebookresearch/habitat-lab) and its prerequisites by following the instructions in the Habitat repository.
 3. Install other Python dependencies used in the modules, for example:
-   ```bash
-  pip install numpy opencv-python torch scikit-learn scikit-image scikit-fuzzy pysift lightglue
+   ```
+   pip install numpy opencv-python torch scikit-learn scikit-image scikit-fuzzy pysift lightglue
    ```
 
 ## Running the Demo
