@@ -35,7 +35,7 @@ The system follows the methodology presented in the following paper:
 1. Install Python 3.8 or later.
 2. Install [Habitat Lab](https://github.com/facebookresearch/habitat-lab) and its prerequisites by following the instructions in the Habitat repository.
 3. Install other Python dependencies used in the modules, for example:
-   ```
+   ```bash
    pip install numpy opencv-python torch scikit-learn scikit-image scikit-fuzzy pysift lightglue
    ```
 
@@ -55,12 +55,14 @@ The system follows the methodology presented in the following paper:
 The `examples` directory contains small scripts that demonstrate how to use key
 components of this project:
 
-- `feature_based_point_cloud_registration_demo.py` shows how to estimate a
+- `examples/feature_based_point_cloud_registration_demo.py` shows how to estimate a
   relative pose between two RGB-D frames using
   `FeatureBasedPointCloudRegistration`.
-- `rgbd_similarity_demo.py` computes similarity between two RGB-D observations
+- `examples/rgbd_similarity_demo.py` computes similarity between two RGB-D observations
   with `RGBDSimilarity`.
-- `navigator_demo.py` loads a trained classifier and predicts a navigation
+- `examples/navigator_demo.py` loads a trained classifier and predicts a navigation
   action with `Navigator`.
-- `navigation_policy_demo.py` demonstrates invoking the keyboard-controlled
+- `examples/navigation_policy_demo.py` demonstrates invoking the keyboard-controlled
   `NavigationPolicy`.
+- `keyframe_selector.py` selects visually distinct key frames from a
+  recorded sequence using `VisualSimilarity`.
