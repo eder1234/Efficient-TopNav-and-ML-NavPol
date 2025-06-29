@@ -36,7 +36,7 @@ The system follows the methodology presented in the following paper:
 2. Install [Habitat Lab](https://github.com/facebookresearch/habitat-lab) and its prerequisites by following the instructions in the Habitat repository.
 3. Install other Python dependencies used in the modules, for example:
    ```bash
-   pip install numpy opencv-python torch scikit-learn scikit-image scikit-fuzzy pysift lightglue
+  pip install numpy opencv-python torch scikit-learn scikit-image scikit-fuzzy pysift lightglue
    ```
 
 ## Running the Demo
@@ -50,3 +50,17 @@ The system follows the methodology presented in the following paper:
 ## Notes
 - The provided paths in the code are placeholders used for our experiments. Adjust them according to your environment.
 - The navigation model expects RGB‑D inputs and was trained using the method described in the referenced paper.
+
+## Examples
+The `examples` directory contains small scripts that demonstrate how to use key
+components of this project:
+
+- `feature_based_point_cloud_registration_demo.py` shows how to estimate a
+  relative pose between two RGB-D frames using
+  `FeatureBasedPointCloudRegistration`.
+- `rgbd_similarity_demo.py` computes similarity between two RGB-D observations
+  with `RGBDSimilarity`.
+- `navigator_demo.py` loads a trained classifier and predicts a navigation
+  action with `Navigator`.
+- `navigation_policy_demo.py` demonstrates invoking the keyboard-controlled
+  `NavigationPolicy`.
